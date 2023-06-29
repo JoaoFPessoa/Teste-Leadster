@@ -14,7 +14,7 @@ export const Container = styled.section`
     color: transparent;
     padding: 0 2rem;
     padding-bottom: 1.3rem;
-    border-bottom: 2px solid #d3d3d3;
+    border-bottom: 2px solid var(--border-color);
     .assetHeader {
       margin-left: -40px;
       margin-bottom: 25px;
