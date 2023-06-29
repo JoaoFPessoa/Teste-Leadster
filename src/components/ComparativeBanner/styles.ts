@@ -2,11 +2,13 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   background: #fbfbfd;
+  position: relative;
   padding: 2rem 6rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow-y: hidden;
   img {
     width: 500px;
     height: 500px;
@@ -22,9 +24,10 @@ export const Container = styled.div`
     z-index: 3;
     left: -90px !important;
     transform: rotate(-43deg) !important;
-    margin-top: 400px !important;
+    margin-top: 450px !important;
     width: 600px !important;
     border-radius: 80px !important;
+    overflow: hidden;
   }
 `;
 export const Content = styled.div`
