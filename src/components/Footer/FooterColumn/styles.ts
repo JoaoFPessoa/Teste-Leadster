@@ -14,4 +14,12 @@ export const Container = styled.div`
     font-weight: 400;
     cursor: pointer;
   }
+  @media (max-width: 481px) {
+    h3 {
+      font-size: 14px;
+    }
+    li {
+      font-size: 12px;
+    }
+  }
 `;

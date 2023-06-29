@@ -28,4 +28,25 @@ export const Container = styled.div`
     display: block;
     margin-bottom: 8px;
   }
+  @media (max-width: 481px) {
+    h3 {
+      font-size: 14px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+`;
+export const ImagesContainer = styled.div`
+  display: flex;
+  @media (max-width: 481px) {
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      font-size: 14px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
 `;

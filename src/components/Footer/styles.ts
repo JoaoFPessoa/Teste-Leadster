@@ -20,5 +20,8 @@ export const ColumnsContainer = styled.div`
   padding: 2rem 15rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  @media (max-width: 900px) {
+    padding: 2rem 1rem;
+  }
 `;

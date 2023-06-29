@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  overflow-y: hidden;
+  overflow: hidden;
   img {
     width: 500px;
     height: 500px;
@@ -19,7 +19,6 @@ export const Container = styled.div`
     background-color: #f2f9ff !important;
     height: 900px;
     display: block;
-    border-radius: 80px;
     z-index: 3;
     left: -90px !important;
     transform: rotate(-43deg) !important;
@@ -30,11 +29,16 @@ export const Container = styled.div`
   }
 `;
 export const Content = styled.div`
+  position: relative;
+  z-index: 8;
   width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 481px) {
+    padding: 0 1rem;
+  }
   h2 {
     font-weight: 500;
   }
@@ -47,6 +51,7 @@ export const Content = styled.div`
 
 export const Rating = styled.div`
   padding: 1rem 0;
+
   img {
     height: 50px;
     width: 150px;
@@ -54,18 +59,20 @@ export const Rating = styled.div`
   }
   .upperContent {
     display: flex;
+    margin-bottom: 8px;
   }
   .lowerContent {
     display: flex;
     align-items: center;
+
+    border: none;
+    font-size: 12px;
     span {
-      border: none;
-      font-size: 12px;
-    }
-    span:first-of-type {
       padding: 0;
       padding-right: 5px;
-      border-right: 2px solid grey;
+    }
+    span {
+      border-bottom: none;
     }
     .noCardImage {
       width: 15px;
