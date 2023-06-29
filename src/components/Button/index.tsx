@@ -1,13 +1,13 @@
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import { ButtonVariant, ButtonWrapper } from "./styles";
 
-type ButtonProps = {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
   variant?: ButtonVariant;
   children?: ReactNode;
   width?: string;
   padding?: string;
-};
+}
 
 export default function Button({
   title,
@@ -15,9 +15,11 @@ export default function Button({
   children,
   width,
   padding,
+  onClick,
 }: ButtonProps) {
   return (
     <ButtonWrapper
+      onClick={onClick}
       title={title}
       variant={variant}
       width={width}
