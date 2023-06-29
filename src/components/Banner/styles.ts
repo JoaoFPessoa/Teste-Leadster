@@ -18,6 +18,9 @@ export const Container = styled.section`
     .assetHeader {
       margin-left: -40px;
       margin-bottom: 25px;
+      @media (max-width: 396px) {
+        display: none;
+      }
     }
   }
   h2 {
