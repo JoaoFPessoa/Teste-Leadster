@@ -113,7 +113,7 @@ type ButtonProps = {
   variant: "green" | "blue" | "yellow";
 };
 
-export const FooterButtonsContainer = styled.div<ButtonProps>`
+export const FooterButtonsContainer = styled.div`
   padding-top: 0.5rem;
 `;
 export const ModalButton = styled.button<ButtonProps>`
