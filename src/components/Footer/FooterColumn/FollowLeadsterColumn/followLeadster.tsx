@@ -2,13 +2,13 @@ import Image from "next/image";
 import Facebook from "../../../../assets/facebook.svg";
 import Instagram from "../../../../assets/instagram.svg";
 import Linkedin from "../../../../assets/linkedin.svg";
-import { Container } from "./followLeadsterStyles";
+import { Container, ImagesContainer } from "./followLeadsterStyles";
 
 export default function FollowLeadsterColumn() {
   return (
     <Container>
       <h3>Siga a Leadster</h3>
-      <div style={{ display: "flex" }}>
+      <ImagesContainer>
         <a
           href="https://www.linkedin.com/company/leadster-platform/?originalSubdomain=br"
           target="_blank"
@@ -24,7 +24,7 @@ export default function FollowLeadsterColumn() {
         <a href="https://www.instagram.com/leadster.com.br/" target="_blank">
           <Image src={Instagram} alt="Instagram" />
         </a>
-      </div>
+      </ImagesContainer>
       <span>
         <b>E-mail: </b>contato@leadster.com.br
       </span>
