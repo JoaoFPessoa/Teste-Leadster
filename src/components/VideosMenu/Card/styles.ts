@@ -7,6 +7,13 @@ export const Container = styled.article`
   width: 32%;
   position: relative;
   height: 100%;
+  @media (max-width: 768px) {
+    width: 48%;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+
   h4 {
     padding: 1rem 2.5rem;
   }
