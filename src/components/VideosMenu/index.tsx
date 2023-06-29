@@ -1,16 +1,15 @@
 import { useState } from "react";
-import Card, { VideoProps } from "./Card";
+import Card from "./Card";
 import Filter from "./Filter";
 import { CardWrapper, Container, PaginationContainer } from "./styles";
 
-type VideosProps = {
-  data: {
-    title: string;
-    url: string;
-  };
+type Item = {
+  title: string;
+  category?: string;
+  url: string;
 };
 
-export default function VideosMenu({ data }: VideosProps[]) {
+export default function VideosMenu({ data }: { data: Item[] }) {
   const [filter, setFilter] = useState("all");
   function getFilterValue(value: string) {
     setFilter(value);
@@ -30,7 +29,7 @@ export default function VideosMenu({ data }: VideosProps[]) {
     <Container>
       <Filter getFilterValue={getFilterValue} />
       <CardWrapper>
-        {itensDaPagina.map((video: VideoProps) => {
+        {itensDaPagina.map((video: Item) => {
           return <Card data={video} category={filter} key={Math.random()} />;
         })}
       </CardWrapper>

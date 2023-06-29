@@ -6,10 +6,13 @@ import Modal from "@/components/Modal";
 import { useState } from "react";
 import { YouTubePlayer } from "react-youtube";
 
-export type VideoProps = {
-  title: string;
-  url: string;
-  category?: string;
+type VideoProps = {
+  data: {
+    title: string;
+    category?: string;
+    url: string;
+  };
+  category: string;
 };
 
 export default function Card({ data, category }: VideoProps) {
@@ -26,10 +29,10 @@ export default function Card({ data, category }: VideoProps) {
   var url = data.url;
   var regex = /v=([^&]+)/;
   var match = url.match(regex);
-
+  let videoUrl = "";
   if (match) {
     var videoId = match[1];
-    var videoUrl = `https://www.youtube.com/embed/${videoId}`;
+    videoUrl = `https://www.youtube.com/embed/${videoId}`;
   } else {
     console.log("Erro ao encontrar o vídeo.");
   }
