@@ -1,6 +1,6 @@
 # Teste-Leadster
 
-<h1>Teste de frontend para empresa de Marketing Conversacional chamada Leadster</h1>
+<h3>Teste de frontend para empresa de Marketing Conversacional chamada Leadster</h3>
 
 <h4>Decisões tomadas</h4>
 
@@ -36,7 +36,7 @@ Contei com a ajuda do ESlint e Typescript para melhora do código.
 - Alta dinamicidade em componentes para serem reutilizados
 - Pouquíssimas libs usadas, tornando-o mais leve e independente
 
-<h4> Instruções para rodar o projeto </h4>
+<h3> Instruções para rodar o projeto </h3>
 
 - Abra seu terminal
 - Rode esta lista de comandos:
