@@ -13,30 +13,27 @@ const getButtonVariant = (variant?: ButtonVariant) => {
       return css`
         background-color: var(--primary);
         border: 1px solid var(--primary);
-        border-radius: 50px;
         color: white;
-        transition: 0.5s ease;
-
         &:hover {
           color: var(--primary);
           background-color: white;
         }
       `;
-    // case 'secondary':
-    //   return css`
-    //     background-color: var(--white);
-    //     color: white;
-    //   `
-    // case 'onboarding':
-    //   return css`
-    //     background-color: var(--black-300);
-    //     color: var(--white);
-    //   `
-    // case 'error':
-    //   return css`
-    //     background-color: var(--red);
-    //     color: var(--white);
-    //   `;
+    case "secondary":
+      return css`
+        border: 1px solid var(--border-color);
+        background-color: white;
+        color: "";
+
+        &:hover {
+          color: var(--primary);
+          border: 1px solid var(--primary);
+        }
+        &:focus {
+          background: var(--primary);
+          color: white;
+        }
+      `;
     default:
       return css`
         background-color: var(--primary);
@@ -48,6 +45,8 @@ const getButtonVariant = (variant?: ButtonVariant) => {
 export const ButtonWrapper = styled.button<ButtonWrapperProps>`
   ${(props) => getButtonVariant(props.variant)};
   cursor: pointer;
+  border-radius: 50px;
+  transition: 0.5s ease;
   width: ${(props) => (props.width ? props.width : "")};
   padding: ${(props) => (props.padding ? props.padding : "0.5rem")};
 `;
