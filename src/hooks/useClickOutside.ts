@@ -9,8 +9,6 @@ interface IClickOutside {
 function useClickOutside({ ref, onClickOutside }: IClickOutside) {
   const handleClickOutside = useCallback(
     (event: MouseEvent) => {
-      // Not trigger case when the element that have the class to be avoid is on screen
-
       if (ref.current && !ref.current.contains(event.target as HTMLElement)) {
         onClickOutside(event);
       }
