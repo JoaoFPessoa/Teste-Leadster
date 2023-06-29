@@ -30,17 +30,21 @@ export default function ComparativeBanner() {
             <Image src={SeloRd} alt="selo-rd" />
           </div>
           <div className="lowerContent">
-            <Image src={NoCard} alt="noCard" className="noCardImage" />
-            <span>
-              {" "}
-              <b>Não</b> é necessário Cartão de Crédito
-            </span>
-            <Image
-              src={RatingImage}
-              alt="ratingImage"
-              className="ratingImage"
-            />
-            <span>4.9/5 média de satisfação</span>
+            <div>
+              <Image src={NoCard} alt="noCard" className="noCardImage" />
+              <span>
+                {" "}
+                <b>Não</b> é necessário Cartão de Crédito
+              </span>
+            </div>
+            <div>
+              <Image
+                src={RatingImage}
+                alt="ratingImage"
+                className="ratingImage"
+              />
+              <span>4.9/5 média de satisfação</span>
+            </div>
           </div>
         </Rating>
       </Content>
