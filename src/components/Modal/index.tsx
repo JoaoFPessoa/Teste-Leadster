@@ -1,4 +1,10 @@
-import { Container, Footer, Overlay } from "./styles";
+import {
+  Container,
+  Footer,
+  FooterButtonsContainer,
+  ModalButton,
+  Overlay,
+} from "./styles";
 import ReactPortal from "../ReactPortal";
 import { useRef } from "react";
 import useAnimatedUnmount from "../../hooks/useAnimatedUnmount";
@@ -44,7 +50,21 @@ export default function Modal({ title, children, visible, onCancel }: Props) {
             {title}{" "}
           </h1>
           <div className="modal-body">{children}</div>
-          <Footer></Footer>
+          <Footer>
+            <h4>Descrição</h4>
+            <p>
+              Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem
+              ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+              dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            </p>
+            <h4>Downloads</h4>
+
+            <FooterButtonsContainer>
+              <ModalButton variant="green">Spreadsheet.xls</ModalButton>
+              <ModalButton variant="blue">Document.doc</ModalButton>
+              <ModalButton variant="yellow">Presentation.ppt</ModalButton>
+            </FooterButtonsContainer>
+          </Footer>
         </Container>
       </Overlay>
     </ReactPortal>

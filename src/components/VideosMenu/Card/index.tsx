@@ -54,7 +54,7 @@ export default function Card({ data, category }: VideoProps) {
         title={data.title}
         url={data.url}
       >
-        <iframe width="420" height="315" src={videoUrl}></iframe>
+        <iframe width="470" height="405" src={videoUrl}></iframe>
       </Modal>
     </Container>
   );
