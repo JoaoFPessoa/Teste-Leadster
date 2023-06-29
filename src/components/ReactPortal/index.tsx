@@ -1,6 +1,14 @@
+import { ReactNode } from "react";
 import ReactDOM from "react-dom";
 
-export default function ReactPortal({ containerId = "portal-root", children }) {
+type Props = {
+  containerId: string;
+  children?: ReactNode;
+};
+export default function ReactPortal({
+  containerId = "portal-root",
+  children,
+}: Props) {
   let container = document.getElementById(containerId);
   if (!container) {
     container = document.createElement("div");
