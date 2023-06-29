@@ -68,6 +68,13 @@ export const Container = styled.div<OverlayProps>`
   max-width: 450px;
   width: 100%;
   animation: ${scaleIn} 0.2s;
+  @media (max-width: 481px) {
+    padding: 0;
+    h1 {
+      font-size: 15px !important;
+      padding-top: 1rem;
+    }
+  }
 
   h1 {
     span {
