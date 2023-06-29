@@ -3,7 +3,8 @@ import { styled } from "styled-components";
 export const Container = styled.article`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
-  width: calc(33.99% - 15px);
+  /* width: calc(33.99%); */
+  width: 32%;
   position: relative;
   height: 100%;
   h4 {

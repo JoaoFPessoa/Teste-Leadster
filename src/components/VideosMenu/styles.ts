@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  padding: 4rem 20rem;
+  padding: 4rem 10%;
 `;
 
 export const CardWrapper = styled.div`

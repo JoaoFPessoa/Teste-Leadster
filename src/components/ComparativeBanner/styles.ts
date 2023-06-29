@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   background: #fbfbfd;
   position: relative;
-  padding: 2rem 6rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
