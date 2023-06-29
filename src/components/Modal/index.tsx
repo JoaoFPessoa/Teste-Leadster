@@ -14,15 +14,8 @@ type Props = {
   onCancel: any;
 };
 
-export default function Modal({
-  title,
-  children,
-  isLoading = true,
-  visible,
-  onCancel,
-}: Props) {
+export default function Modal({ title, children, visible, onCancel }: Props) {
   const modalContainerRef = useRef<HTMLDivElement>(null);
-  console.log({ visible });
 
   useClickOutside({
     ref: modalContainerRef,
