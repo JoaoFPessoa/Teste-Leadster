@@ -38,8 +38,8 @@ export default function VideosMenu({ data }: VideosProps[]) {
         <h3>Página</h3>
         <button onClick={() => setCurrentPage(1)}>1</button>
         <button onClick={() => setCurrentPage(2)}>2</button>
-        <button>3</button>
-        <button>4</button>
+        <button onClick={() => setCurrentPage(2)}>3</button>
+        <button onClick={() => setCurrentPage(2)}>4</button>
       </PaginationContainer>
     </Container>
   );
